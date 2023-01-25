@@ -1,0 +1,43 @@
+.navmenu {
+    background-color: $third-color;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 100%;
+        width: 370px;
+        margin: 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        a {
+            display: flex;
+            align-items: center;
+            height: 35px;
+            padding: 0 20px;
+            border-right: 1px solid rgba($color: #fff, $alpha: .1);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+        &:hover {
+            background-color: #000;
+        }
+    }
+    &__item:last-child a {
+        border: none;
+    }
+}
+.btn {
+    &_club {
+        margin-top: 7px;
+    }
+}
