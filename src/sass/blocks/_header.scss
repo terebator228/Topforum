@@ -1,14 +1,17 @@
 .header {
+    display: flex;
+    align-items: center;
     height: 95px;
     background-color: #fff;
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        margin-top: 15px;
+        align-items: center;
     }
     &__list {
         display: flex;
         list-style-type: none;
+        margin: 0;
         margin-left: 20px;
         .header__item:last-child {
             margin-right: 0;
