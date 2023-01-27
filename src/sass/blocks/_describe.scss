@@ -1,0 +1,19 @@
+.describe {
+    min-height: 838px;
+    &__text {
+        margin-top: 66px;
+        color: $third-color;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 58px;
+    }
+    &__btn-wrapper {
+        display: flex;
+        width: 325px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}

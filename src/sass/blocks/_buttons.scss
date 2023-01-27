@@ -28,4 +28,20 @@
             background-color: $second-color;
         }
     }
+    &_beige {
+        width: 120px;
+        height: 38px;
+        background-color: #d4c198;
+        margin-top: 20px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &_black {
+        background-color: $third-color;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
 }
