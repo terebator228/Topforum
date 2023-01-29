@@ -14,9 +14,12 @@
     width: 1145px;
     margin: 0 auto;
 }
+
 @import 'blocks/buttons';
 @import 'blocks/navmenu';
 @import 'blocks/header';
+@import 'blocks/title';
 @import 'blocks/forums';
 @import 'blocks/describe';
 @import 'blocks/grid-wrapper';
+@import 'blocks/reviews';
