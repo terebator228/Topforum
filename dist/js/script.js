@@ -64,3 +64,38 @@ document.querySelector('.prev_review').addEventListener('click',function () {
 document.querySelector('.next_review').addEventListener('click',function () {
     reviewsSlider.goTo('next');
 });
+
+const clientsSlider = tns({
+    container: '.clients__inner',
+    items: 6,
+    slideBy: 1,
+    autoplay: false,
+    rewind: true,
+    responsive: {
+        320: {
+            nav: true,
+            mouseDrag: true,
+        },
+        640: {
+          edgePadding: 20,
+          gutter: 20,
+          items: 1
+        },
+        700: {
+          gutter: 30
+        },
+        900: {
+          items: 6,
+          nav: false,
+          controls: false,
+        }
+      }
+});
+
+document.querySelector('.clients_prev').addEventListener('click',function () {
+    clientsSlider.goTo('prev');
+});
+
+document.querySelector('.clients_next').addEventListener('click',function () {
+    clientsSlider.goTo('next');
+});

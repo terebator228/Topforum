@@ -1,0 +1,37 @@
+.clients {
+    min-height: 287px;
+    padding: 44px 0 70px 0;
+    background-color: rgba($color: $main-color, $alpha: .3);
+    &__inner {
+        margin-top: 30px;
+    }
+    &__item {
+        width: 180px;
+        height: 123px;
+        border: 1px solid #f8f3e9;
+        background-color: #ffffff;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: inherit;
+            height: inherit;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.clients_prev, .clients_next {
+    top: 55%;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+.clients_prev {
+    left: -2%;
+}
+.clients_next {
+    right: -3%;
+}
