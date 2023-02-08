@@ -35,6 +35,48 @@
     &__item:last-child a {
         border: none;
     }
+    &__burger {
+        display: none;
+        width: 30px;
+        height: 24px;
+        margin-top: 14px;
+        span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            margin-bottom: 4px;
+            transition: .5s all;
+            background-color: #fff;
+        }
+        
+    }
+}
+.burger-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 0.6s all;
+    z-index: 20;
+    list-style-type: none;
+    &__item {
+        display: block;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
 .btn {
     &_club {

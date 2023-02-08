@@ -1,3 +1,22 @@
+
+window.addEventListener('DOMContentLoaded', () => {
+    const hamburger_menu = document.querySelector('.burger-menu'),
+    menuItem = document.querySelectorAll('.menu__item'),
+    hamburger = document.querySelector('.navmenu__burger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('navmenu__burger_active');
+        hamburger_menu.classList.toggle('burger-menu__item_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('navmenu__burger_active');
+            hamburger_menu.classList.toggle('burger-menu__item_active');
+        })
+    })
+})
+
 const slider = tns({
     container: '.forums__inner',
     items: 1,

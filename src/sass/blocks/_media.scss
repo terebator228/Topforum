@@ -1,0 +1,142 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px
+    }
+    .forums {
+        &__inner {
+            margin-left: 46%;
+        }
+    }
+    .prev {
+        left: 43%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px
+    }
+    .header {
+        &__item {
+            margin-right: 30px;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .forums {
+        &__inner {
+            margin-left: 18%;
+        }
+    }
+    .prev {
+        left: 15%;
+        top: 65%;
+    }
+    .next {
+        right: 14%;
+        top: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px
+    }
+    .navmenu {
+        &__list {
+            display: none;
+        }
+        &__burger {
+            display: block;
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(2px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+    .burger-menu {
+        &__item {
+            &_active {
+                right: 0;
+            }
+        } 
+    }
+    .header {
+        &__item {
+            display: none;
+            &:first-child {
+                display: block;
+            }
+        }
+    }
+    .forums {
+        &__inner {
+            margin-left: 9%;
+            transform: translateX(-9%);
+        }
+    }
+    .prev {
+        left: 2%;
+    }
+    .next {
+        right: 2%;
+    }
+    .tns-nav {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: #fff;
+            border: none;
+            margin: 0 5px;
+        }
+        .tns-nav-active {
+            background-color: $second-color;
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .forums {
+        &__inner {
+            
+            left: 0;
+            margin-top: 60px;
+        }
+        &__item {
+            width: 280px;
+            height: 279px;
+            margin-left: 40%;
+            transform: translateX(-50%);
+        }
+        &__wrapper {
+            width: 260px;
+            height: 260px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .prev, .next {
+        display: none;
+    }
+}
