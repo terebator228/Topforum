@@ -10,6 +10,14 @@
     .prev {
         left: 43%;
     }
+    .grid-wrapper {
+        &__title {
+            font-size: 15px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -36,6 +44,10 @@
     .next {
         right: 14%;
         top: 65%;
+    }
+    .grid-wrapper {
+        grid-template-columns: repeat(2,minmax(auto,360px));
+
     }
 }
 
@@ -109,7 +121,10 @@
             background-color: $second-color;
         }
     }
-    
+    .grid-wrapper {
+        grid-template-columns: repeat(1,minmax(auto,1fr));
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -138,5 +153,10 @@
     }
     .prev, .next {
         display: none;
+    }
+    .describe {
+        &__text {
+            font-size: 14px;
+        }
     }
 }
