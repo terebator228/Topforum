@@ -58,20 +58,24 @@ const reviewsSlider = tns({
     autoplay: false,
     responsive: {
         320: {
+            items: 1,
+            controls: false,
             nav: true,
             mouseDrag: true,
         },
         640: {
           edgePadding: 20,
           gutter: 20,
-          items: 1
         },
-        700: {
+        767: {
+          nav: false,
           gutter: 30
         },
         900: {
-          items: 2,
-          nav: false,
+          items: 1,
+        },
+        1201: {
+            items: 2,
         }
       }
 });
@@ -94,6 +98,9 @@ const clientsSlider = tns({
         320: {
             nav: true,
             mouseDrag: true,
+        },
+        577: {
+            fixedWidth: 600
         },
         640: {
           edgePadding: 20,

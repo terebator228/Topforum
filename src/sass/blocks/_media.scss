@@ -18,6 +18,16 @@
             font-size: 14px;
         }
     }
+    .reviews {
+        // &__inner {
+        //     position: relative;
+        //     right: -15%;
+        // }
+        &__item-wrapper {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -47,7 +57,14 @@
     }
     .grid-wrapper {
         grid-template-columns: repeat(2,minmax(auto,360px));
-
+    }
+    .prev_review {
+        left: 4%;
+        top: 60%;
+    }
+    .next_review {
+        right: 4%;
+        top: 60%;
     }
 }
 
@@ -125,6 +142,15 @@
         grid-template-columns: repeat(1,minmax(auto,1fr));
 
     }
+    .reviews {
+        padding: 20px 0 60px 0;
+        .container {
+            max-width: 590px;
+        }
+    }
+    .prev_review, .next_review {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -158,5 +184,45 @@
         &__text {
             font-size: 14px;
         }
+        &__btn-wrapper {
+            width: 300px;
+            .btn {
+                width: 145px;
+            }
+        }
+    }
+    .reviews {
+        &__inner {
+            margin-top: 5px;
+        }
+        &__item-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__circle {
+            margin-bottom: 10px;
+        }
+        &__rectangle {
+            max-width: 315px;
+            height: 270px;
+            background-image: none;
+            background-color: #fff;
+        }
+        &__name {
+            margin-top: 13px;
+        }
+        &__date {
+            margin-bottom: 5px;
+        }
+        &__text {
+            width: auto;
+            margin: 0 25px;
+        }
+        .tns-nav {
+            top: 103%;
+        }
+    }
+    .reviews__name, .reviews__date {
+        margin-left: 25px;
     }
 }
