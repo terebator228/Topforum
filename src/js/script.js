@@ -97,23 +97,30 @@ const clientsSlider = tns({
     responsive: {
         320: {
             nav: true,
+            controls: false,
+            fixedWidth: 150,
             mouseDrag: true,
+            gutter: 10,
         },
         577: {
-            fixedWidth: 600
+
         },
         640: {
           edgePadding: 20,
-          gutter: 20,
-          items: 1
         },
-        700: {
-          gutter: 30
-        },
-        900: {
-          items: 6,
+        769: {
+          fixedWidth: 180,
           nav: false,
-          controls: false,
+          gutter:60,
+          items: 3,
+        },
+        993: {
+          items: 4,
+          nav: false,
+          gutter: 10,
+        },
+        1200: {
+            items: 6,
         }
       }
 });

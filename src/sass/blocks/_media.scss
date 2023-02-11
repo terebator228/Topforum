@@ -151,6 +151,15 @@
     .prev_review, .next_review {
         display: none;
     }
+    .promo-video {
+        min-height: 520px;
+    }
+    .clients {
+        padding: 25px 0 70px 0;
+    }
+    .clients_prev, .clients_next {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -224,5 +233,24 @@
     }
     .reviews__name, .reviews__date {
         margin-left: 25px;
+    }
+    .footer {
+        &__topforum {
+            font-size: 13px;
+            padding-right: 20px;
+        }
+        &__contact {
+            font-size: 13px;
+            margin-left: 20px;
+        }
+        &__followus {
+            display: none;
+        }
+        &__copyright {
+            font-size: 13px;
+        }
+        &__devs {
+            font-size: 12px;
+        }
     }
 }
