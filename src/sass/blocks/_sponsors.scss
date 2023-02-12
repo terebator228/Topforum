@@ -1,0 +1,41 @@
+.sponsors {
+    min-height: 1176px;
+    padding: 50px 0 68px 0;
+    &__title {
+        color: $third-color;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__descr {
+        color: $third-color;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__label {
+        display: block;
+        color: $third-color;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &__select {
+        display: block;
+        width: 450px;
+        height: 50px;
+        border: 1px solid $main-color;
+        padding: 0 18px;
+        appearance: none;
+        background: url('../icons/sponsors/arrow_down.png') 96% / 5% no-repeat #fff;;
+        margin: 0 auto;
+        margin-top: 22px;
+    }
+}
