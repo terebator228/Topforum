@@ -160,6 +160,13 @@
     .clients_prev, .clients_next {
         display: none;
     }
+    
+    .wrapper {
+        margin-top: 20px;
+        &__item {
+            margin-top: 40px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -233,6 +240,14 @@
     }
     .reviews__name, .reviews__date {
         margin-left: 25px;
+    }
+    .sponsors {
+        &__descr {
+            font-size: 15px;
+        }
+        &__select {
+            width: 300px;
+        }
     }
     .footer {
         &__topforum {

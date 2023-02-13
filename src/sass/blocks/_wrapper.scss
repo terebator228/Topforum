@@ -3,6 +3,11 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 47px;
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 270px);
+        grid-gap: 20px;
+    }
     &__item {
         display: flex;
         width: 270px;
@@ -10,6 +15,9 @@
         flex-direction: column;
         align-items: center;
         margin: 65px 14px 0 14px;
+        &_marg0 {
+            margin: 0;
+        }
     }
     &__sponsor {
         color: $second-color;
