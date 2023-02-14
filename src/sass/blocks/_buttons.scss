@@ -44,4 +44,12 @@
             background-color: $main-color;
         }
     }
+    &_more {
+        display: block;
+        margin: 0 auto;
+        text-transform: none;
+        width: 120px;
+        height: 38px;
+        background-color: #d4c198;
+    }
 }

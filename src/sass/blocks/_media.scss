@@ -55,6 +55,24 @@
         right: 14%;
         top: 65%;
     }
+    .wrapper {
+        &_grid {
+            &-w360 {
+                grid-template-columns: repeat(auto-fill, 310px);
+            }
+        }
+        &__item {
+            &_wauto {
+                min-height: 280px;
+            }
+        }
+        &__img {
+            img {
+                width: 310px;
+                height: 170px;
+            }
+        }
+    }
     .grid-wrapper {
         grid-template-columns: repeat(2,minmax(auto,360px));
     }
@@ -136,6 +154,13 @@
         }
         .tns-nav-active {
             background-color: $second-color;
+        }
+    }
+    .wrapper {
+        &_grid {
+            &-w360 {
+               grid-gap: 0;
+            }
         }
     }
     .grid-wrapper {

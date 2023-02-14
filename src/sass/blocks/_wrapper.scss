@@ -7,6 +7,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, 270px);
         grid-gap: 20px;
+        &-w360 {
+            grid-template-columns: repeat(auto-fill, 360px);
+            grid-gap: 30px;
+        }
     }
     &__item {
         display: flex;
@@ -17,6 +21,16 @@
         margin: 65px 14px 0 14px;
         &_marg0 {
             margin: 0;
+        }
+        &_wauto {
+            width: auto;
+        }
+    }
+    &__img {
+        img {
+            width: 360px;
+            height: 220px;
+            object-fit: cover;
         }
     }
     &__sponsor {
@@ -37,6 +51,7 @@
         margin-top: 20px;
         img {
             max-width: 180px;
+            object-fit: cover;
         }
     }
     &__circle {
@@ -56,7 +71,9 @@
         height: 133px;
         border-radius: 100%;
         img {
-            max-width: 100%;
+            width: 133px;
+            height: 133px;
+            object-fit: cover;
         }
     }
     &__descr {
@@ -70,10 +87,21 @@
         line-height: 20px;
         text-align: center;
         margin-top: 20px;
+        &_mh70 {
+            min-height: 70px;
+        }
         span {
             font-size: 17px;
             text-transform: uppercase;
             font-weight: 700;
+        }
+        a {
+            color: $third-color;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                color: $second-color;
+            }
         }
     }
 }
