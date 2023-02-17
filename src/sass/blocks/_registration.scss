@@ -1,0 +1,83 @@
+.registration {
+    min-height: 1195px;
+    padding: 50px 0 45px 0;
+    &__title {
+        color: $third-color;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 39px;
+    }
+    &__step {
+        width: 414px;
+        height: 58px;
+        color: $second-color;
+        border: 2px solid $second-color;
+        background-color: #ffffff;
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 54px;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+            color: $second-color;
+        }
+    }
+    &__step:last-child {
+        margin-bottom: 40px;
+    }
+    &__arrow {
+        display: block;
+        margin: 8px auto 8px auto;
+    }
+    &__wrapper {
+        margin-top: 45px;
+    }
+    &__wrap-item {
+        max-width: 680px;
+        display: flex;
+        align-items: center;
+        margin: 10px auto 10px auto;
+    }
+    &__label {
+        width: 200px;
+        margin: 0;
+        margin-right: 30px;
+        color: #606060;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    &__input {
+        display: block;
+        width: 450px;
+        height: 50px;
+        border: 1px solid #e8d8b6;
+        padding: 0 18px;
+        outline: none;
+    }
+    &__select {
+        color: #606060;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        display: block;
+        width: 450px;
+        height: 50px;
+        border: 1px solid #e8d8b6;
+        padding: 0 18px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url(../icons/sponsors/arrow_down.png) 96%/5% no-repeat #fff;
+        option {
+            color: #606060;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+    
+}
