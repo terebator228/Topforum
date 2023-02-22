@@ -81,6 +81,15 @@
                 
 
                 <div class="registration__wrap-item">
+                    <div class="registration__label">Please choose delegate package:</div>
+    
+                    <div class="registration__btn-wrap">
+                        <button class="btn btn_package" id="standard">Standard</button>
+                        <button class="btn btn_package" id="premium">Premium</button>
+                    </div>
+                </div>
+
+                <div class="registration__wrap-item">
                     <label for="name" class="registration__label">Name</label>
     
                     <input type="text" id="name" name="name" class="registration__input" required>
@@ -141,6 +150,30 @@
     
                     <input type="text" id="Web-site" name="Web-site" class="registration__input" required>
                 </div>
+
+                <div class="registration__wrap-item">
+                    <div class="registration__label">Method of payment</div>
+    
+                    <div class="registration__btn-wrap registration__btn-wrap_payment">
+                        <button class="btn btn_payment" id="free">free</button>
+                        <button class="btn btn_payment" id="mastercard"><img src="icons/mastercard.png" alt="mastercard"></button>
+                        <button class="btn btn_payment" id="invoice">Invoice</button>
+                        <button class="btn btn_payment" id="paypal"><img src="icons/paypal.png" alt="paypal"></button>
+                    </div>
+                </div>
+
+
+                <div class="registration__wrap-item">
+                    <div class="registration__submit-wrap">
+                        <input type="checkbox" id="termsOfConditions" name="termsOfConditions" class="registration__checkbox">
+                        <label for="termsOfConditions">
+                            I accept <a href="#">Terms&Conditions</a>
+                        </label>
+                        
+                        <button class="btn btn_submit" id="free">SUBMIT</button>
+                    </div>
+                </div>
+                
             </div>
 
             

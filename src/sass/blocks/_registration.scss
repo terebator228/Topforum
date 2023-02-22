@@ -37,7 +37,7 @@
         margin-top: 45px;
     }
     &__wrap-item {
-        max-width: 680px;
+        max-width: 650px;
         display: flex;
         align-items: center;
         margin: 10px auto 10px auto;
@@ -45,15 +45,15 @@
     &__label {
         width: 200px;
         margin: 0;
-        margin-right: 30px;
+        margin-right: 22px;
         color: #606060;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
         line-height: 24px;
     }
     &__input {
         display: block;
-        width: 450px;
+        width: 430px;
         height: 50px;
         border: 1px solid #e8d8b6;
         padding: 0 18px;
@@ -65,7 +65,7 @@
         font-weight: 300;
         line-height: 24px;
         display: block;
-        width: 450px;
+        width: 430px;
         height: 50px;
         border: 1px solid #e8d8b6;
         padding: 0 18px;
@@ -79,5 +79,51 @@
             line-height: 24px;
         }
     }
+    &__btn-wrap {
+        display: flex;
+        align-items: center;
+    }
+    &__submit-wrap {
+        width: 430px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 34px;
+        input[type="checkbox"] {
+            display: none;
+          }
+          label {
+            padding-left: 9px;
+            color: #606060;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            a {
+                color: #606060;
+                text-decoration: underline;
+            }
+          }
+          label::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 19px;
+            border: 1px solid #e8d8b6;
+            background-color: #ffffff;
+            vertical-align: middle;
+            margin-left: -10px;
+            margin-right: 9px;
+            margin-bottom: 3px;
+          }
+          input[type="checkbox"]:checked + label::before {
+            content: '';
+            background: url('../icons/check-solid.svg') center no-repeat;
+            background-size: 80%;
+          }
+    }
+    
     
 }

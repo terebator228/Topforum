@@ -233,6 +233,14 @@
             font-size: 13px;
         }
     }
+    .registration {
+        &__input, &__select {
+            width: 318px;
+        }
+        .btn_payment {
+            width: 77px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -332,6 +340,41 @@
         }
         &__devs {
             font-size: 12px;
+        }
+    }
+    .registration {
+        &__title {
+            font-size: 20px;
+        }
+        &__step {
+            width: 290px;
+            font-size: 13px;
+        }
+        &__wrap-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__label {
+            width: auto;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        &__select, &__input {
+            width: 290px;
+        }
+        .btn_payment {
+            width: 75px;
+        }
+        &__submit-wrap {
+            width: 290px;
+            margin-left: 0;
+            label {
+                font-size: 12px;
+            }
+        }
+        .btn_submit {
+            width: 100px;
         }
     }
 }

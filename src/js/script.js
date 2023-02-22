@@ -1,4 +1,55 @@
 
+const btnWrap = document.querySelector('.registration__btn-wrap'),
+      btnWrapPayment = document.querySelector('.registration__btn-wrap_payment'),
+      package = btnWrap.querySelectorAll('button'),
+      payment = document.querySelectorAll('.btn_payment');
+
+function removeActive(btn, className) {
+    btn.forEach((item) => {
+        item.classList.remove(className);
+    }) 
+};
+
+function addPackageActive(i = 0) {
+    package[i].classList.add('btn_package_active')
+};
+
+function addPaymentActive(i = 0) {
+    payment[i].classList.add('btn_payment_active')
+};
+
+removeActive(package, 'btn_package_active');
+removeActive(payment, 'btn_payment_active');
+addPackageActive();
+addPaymentActive();
+
+btnWrap.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (target && target.classList.contains('btn_package')) {
+        package.forEach((item, i) => {
+            if (target == item) {
+                removeActive(package, 'btn_package_active');
+                addPackageActive(i);
+            }
+        })
+    }
+});
+
+btnWrapPayment.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (target && target.classList.contains('btn_payment')) {
+        payment.forEach((item, i) => {
+            if (target == item) {
+                removeActive(payment, 'btn_payment_active');
+                addPaymentActive(i);
+            }
+        })
+    }
+});
+
+
 window.addEventListener('DOMContentLoaded', () => {
     const hamburger_menu = document.querySelector('.burger-menu'),
     menuItem = document.querySelectorAll('.menu__item'),
@@ -16,6 +67,8 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+
 
 const slider = tns({
     container: '.forums__inner',
@@ -132,3 +185,6 @@ document.querySelector('.clients_prev').addEventListener('click',function () {
 document.querySelector('.clients_next').addEventListener('click',function () {
     clientsSlider.goTo('next');
 });
+
+// Registration Buttons
+
