@@ -102,4 +102,11 @@
         text-align: center;
         text-transform: uppercase;
     }
+    &_subscribe {
+        width: 129px;
+        height: 42px;
+        background-color: $second-color;
+        margin: 0 auto;
+        margin-top: 6px;
+    }
 }

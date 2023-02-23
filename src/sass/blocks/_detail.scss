@@ -1,0 +1,42 @@
+.detail {
+    padding: 50px 0 68px 0;
+    &__title {
+        color: $third-color;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+    &__text {
+        color: $third-color;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 518px;
+        height: 317px;
+        border: 1px solid #f3ebda;
+        margin: 46px auto 38px auto;
+        img {
+            width: 100%;
+            max-width: 50%;
+        }
+    }
+    &__logos-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 54px;
+        img {
+            width: 100%;
+            max-width: 360px;
+            margin-right: 20px;
+        }
+    }
+}

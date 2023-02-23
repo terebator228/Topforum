@@ -1,4 +1,22 @@
 
+// Modal
+
+const modal = document.querySelector('.modal'),
+      close = document.querySelector('[data-close]'),
+      club = document.querySelectorAll('.btn_club');
+
+club.forEach(item => {
+    item.addEventListener('click', () => {
+        modal.classList.add('modal_show');
+    })
+})
+
+close.addEventListener('click', () => {
+    modal.classList.remove('modal_show');
+})
+
+// Registration button
+
 const btnWrap = document.querySelector('.registration__btn-wrap'),
       btnWrapPayment = document.querySelector('.registration__btn-wrap_payment'),
       package = btnWrap.querySelectorAll('button'),

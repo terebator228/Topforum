@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our exhibitors</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -55,93 +55,129 @@
                         <a href="#">CONTACTS</a>
                     </ul>
                 </ol>
-                <button class="btn"><a href="#">REGISTER NOW </a></button>
+                <button class="btn"><a href="registration.html">REGISTER NOW </a></button>
             </div>
         </div>
     </header>
 
-    <section class="sponsors">
+    <section class="registration">
         <div class="container">
-            <h1 class="sponsors__title">OUR EXHIBITORS</h1>
-            <div class="sponsors__descr">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </div>
+            <h2 class="registration__title">2  EASY STEPS TO REGISTER</h2>
 
-            <label for="sponsors__select" class="sponsors__label">please select a conference</label>
-            <select name="sponsors" id="sponsors__select" class="sponsors__select">
-                <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
-                <option value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
-            </select>
+            <div class="registration__step">FILL IN THE FORM IN ENGLISH</div>
+            <img src="icons/sponsors/arrow_down.png" alt="arrow-down" class="registration__arrow">
+            <div class="registration__step"><a href="#">READ THOROUGHLY TERMS&CONDITIONS</a></div>
+            
+            <div class="registration__wrapper">
 
-            <div class="wrapper wrapper_grid">
-                <div class="wrapper__item wrapper__item_marg0">
-                    <div class="wrapper__logo">
-                        <img src="icons/lacoste.png" alt="lacoste">
+                <div class="registration__wrap-item">
+                    <label for="conference" class="registration__label">Please, choose a conference:</label>
+    
+                    <select name="conference" id="registration__select" class="registration__select">
+                        <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
+                        <option value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
+                    </select>
+                </div>
+                
+
+                <div class="registration__wrap-item">
+                    <div class="registration__label">Please choose delegate package:</div>
+    
+                    <div class="registration__btn-wrap">
+                        <button class="btn btn_package" id="standard">Standard</button>
+                        <button class="btn btn_package" id="premium">Premium</button>
                     </div>
-                    <div class="wrapper__descr">
-                        <span>lacoste</span><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="btn btn_beige"><a href="#">Learn more</a></button>
                 </div>
 
-                <div class="wrapper__item wrapper__item_marg0">
-                    <div class="wrapper__logo">
-                        <img src="icons/kenzo.png" alt="kenzo">
-                    </div>
-                    <div class="wrapper__descr">
-                        <span>KENZO</span><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="btn btn_beige"><a href="#">Learn more</a></button>
+                <div class="registration__wrap-item">
+                    <label for="name" class="registration__label">Name</label>
+    
+                    <input type="text" id="name" name="name" class="registration__input" required>
                 </div>
 
-                <div class="wrapper__item wrapper__item_marg0">
-                    <div class="wrapper__logo">
-                        <img src="icons/dove.png" alt="dove">
-                    </div>
-                    <div class="wrapper__descr">
-                        <span>dove</span><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="btn btn_beige"><a href="#">Learn more</a></button>
+                <div class="registration__wrap-item">
+                    <label for="surname" class="registration__label">Surname:</label>
+    
+                    <input type="text" id="surname" name="surname" class="registration__input" required>
                 </div>
 
-                <div class="wrapper__item wrapper__item_marg0">
-                    <div class="wrapper__logo">
-                        <img src="icons/marmot.png" alt="marmot">
-                    </div>
-                    <div class="wrapper__descr">
-                        <span>marmot</span><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="btn btn_beige"><a href="#">Learn more</a></button>
+                <div class="registration__wrap-item">
+                    <label for="Company Name" class="registration__label">Company Name:</label>
+    
+                    <input type="text" id="Company Name:" name="Company Name:" class="registration__input" required>
                 </div>
 
-                <div class="wrapper__item wrapper__item_marg0">
-                    <div class="wrapper__logo">
-                        <img src="icons/reebok.png" alt="reebok">
-                    </div>
-                    <div class="wrapper__descr">
-                        <span>reebok</span><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="btn btn_beige"><a href="#">Learn more</a></button>
+                <div class="registration__wrap-item">
+                    <label for="bussiness area" class="registration__label">How to contact you?</label>
+    
+                    <select name="bussiness area" id="registration__select" class="registration__select">
+                        <option value="Forex companies">Forex companies</option>
+                    </select>
                 </div>
 
-                <div class="wrapper__item wrapper__item_marg0">
-                    <div class="wrapper__logo">
-                        <img src="icons/converse.png" alt="converse">
-                    </div>
-                    <div class="wrapper__descr">
-                        <span>reebok</span><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="btn btn_beige"><a href="#">Learn more</a></button>
+                <div class="registration__wrap-item">
+                    <label for="Position" class="registration__label">Position:</label>
+    
+                    <input type="text" id="Position" name="Position" class="registration__input" required>
                 </div>
 
+                <div class="registration__wrap-item">
+                    <label for="E-mail (for organizers)" class="registration__label">E-mail (for organizers):</label>
+    
+                    <input type="email" id="E-mail (for organizers)" name="E-mail (for organizers)" class="registration__input" required>
+                </div>
+
+                <div class="registration__wrap-item">
+                    <label for="E-mail (for sponsors)" class="registration__label">E-mail (for sponsors):</label>
+    
+                    <input type="email" id="E-mail (for sponsors)" name="E-mail (for sponsors)" class="registration__input" required>
+                </div>
+
+                <div class="registration__wrap-item">
+                    <label for="Mobile Number (for organizers)" class="registration__label">Mobile Number (for organizers):</label>
+    
+                    <input type="tel" id="Mobile Number (for organizers)" name="Mobile Number (for organizers)" class="registration__input" required>
+                </div>
+
+                <div class="registration__wrap-item">
+                    <label for="Country" class="registration__label">Country:</label>
+    
+                    <input type="text" id="Country" name="Country" class="registration__input" required>
+                </div>
+
+                <div class="registration__wrap-item">
+                    <label for="Web-site" class="registration__label">Web-site:</label>
+    
+                    <input type="text" id="Web-site" name="Web-site" class="registration__input" required>
+                </div>
+
+                <div class="registration__wrap-item">
+                    <div class="registration__label">Method of payment</div>
+    
+                    <div class="registration__btn-wrap registration__btn-wrap_payment">
+                        <button class="btn btn_payment" id="free">free</button>
+                        <button class="btn btn_payment" id="mastercard"><img src="icons/mastercard.png" alt="mastercard"></button>
+                        <button class="btn btn_payment" id="invoice">Invoice</button>
+                        <button class="btn btn_payment" id="paypal"><img src="icons/paypal.png" alt="paypal"></button>
+                    </div>
+                </div>
+
+
+                <div class="registration__wrap-item">
+                    <div class="registration__submit-wrap">
+                        <input type="checkbox" id="termsOfConditions" name="termsOfConditions" class="registration__checkbox">
+                        <label for="termsOfConditions">
+                            I accept <a href="#">Terms&Conditions</a>
+                        </label>
+                        
+                        <button class="btn btn_submit" id="free">SUBMIT</button>
+                    </div>
+                </div>
                 
             </div>
+
+            
+
         </div>
     </section>
 
