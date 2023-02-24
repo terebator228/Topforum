@@ -111,6 +111,21 @@
             align-items: center;
         }
     }
+    .events {
+        &__text {
+            font-size: 15px;
+            line-height: 28px;
+        }
+        &__about {
+            padding: 0;
+        }
+        &__img {
+            width: 300px;
+        }
+        &__soldout {
+            top: 36%
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -262,6 +277,32 @@
                 margin: 0;
                 margin-bottom: 10px;
             }
+        }
+    }
+    .events {
+        &__text {
+            margin-bottom: 30px;
+        }
+        &__item-wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img-wrap {
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+        }
+        &__name, &__date, &__descr {
+            text-align: center;
+        }
+        &__soldout {
+            top: 50%;
         }
     }
 }

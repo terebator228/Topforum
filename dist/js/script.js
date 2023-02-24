@@ -8,12 +8,21 @@ const modal = document.querySelector('.modal'),
 club.forEach(item => {
     item.addEventListener('click', () => {
         modal.classList.add('modal_show');
+        document.body.style.overflow = 'hidden';
     })
 })
 
 close.addEventListener('click', () => {
     modal.classList.remove('modal_show');
+    document.body.style.overflow = '';
 })
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('modal_show');
+        document.body.style.overflow = '';
+    }
+});
 
 // Registration button
 
